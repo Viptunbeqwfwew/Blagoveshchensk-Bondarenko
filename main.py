@@ -1,16 +1,21 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import csv
 
 
-def print_hi():
-    # Use a breakpoint in the code line below to debug your script.
-    print('My first git-repo')  # Press Ctrl+F8 to toggle the breakpoint.
+def Da():
+    fff, ffa = int(input()), int(input())
+    with open("badData/traffic.csv", encoding="utf8", mode='r') as csvFile:
+        reader = csv.DictReader(csvFile, delimiter=";")
+        expensive = set(map(lambda x: x["name"], filter(lambda x: fff < int(x['volume']) < ffa and x['type'] == 'import', reader)))
+    print(len(expensive))
+    for i in expensive:
+        print(i)
 
 
-# Press the green button in the gutter to run the script.
+def main():
+    Da()
+
+
 if __name__ == '__main__':
-    print_hi()
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
