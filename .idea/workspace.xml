@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61a07f75-e117-4865-a4a1-59346ca91292" name="Changes" comment="No reg">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="61a07f75-e117-4865-a4a1-59346ca91292" name="Changes" comment="Da">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668755288723</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Da">
+      <created>1668757024585</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668757024585</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +125,7 @@
     <MESSAGE value="hi 9i n na 6pi da kak tyt pichatatidd" />
     <MESSAGE value="A task 1" />
     <MESSAGE value="No reg" />
-    <option name="LAST_COMMIT_MESSAGE" value="No reg" />
+    <MESSAGE value="Da" />
+    <option name="LAST_COMMIT_MESSAGE" value="Da" />
   </component>
 </project>
