@@ -7,7 +7,7 @@ def Da():
         reader = csv.DictReader(csvFile, delimiter=";")
         expensive = set(map(lambda x: x["name"], filter(lambda x: fff < int(x['volume']) < ffa and x['type'] == 'import', reader)))
     print(len(expensive))
-    for i in expensive:
+    for i in sorted(expensive):
         print(i)
 
 
