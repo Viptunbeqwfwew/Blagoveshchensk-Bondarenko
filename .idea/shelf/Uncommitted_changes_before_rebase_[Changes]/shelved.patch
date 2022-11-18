@@ -1,0 +1,107 @@
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 3978e99db23f8124779e901fa02276693fb71819)
++++ /dev/null	(revision 3978e99db23f8124779e901fa02276693fb71819)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1668753849581)
++++ b/.idea/workspace.xml	(date 1668753849581)
+@@ -0,0 +1,86 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="61a07f75-e117-4865-a4a1-59346ca91292" name="Changes" comment="hi 9i n na 6pi da kak tyt pichatatidd">
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/loli.iml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="SET_USER_NAME_GLOBALLY" value="false" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2Hi0K69ucq1y2T0i5lFQY4kNQ6c" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "last_opened_file_path": "C:/Users/student/PycharmProjects/loli"
++  }
++}]]></component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="61a07f75-e117-4865-a4a1-59346ca91292" name="Changes" comment="" />
++      <created>1668752529533</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1668752529533</updated>
++    </task>
++    <task id="LOCAL-00001" summary="Tiuohgyntohbngojthbn ongi bfrngvjkfbujhfrvgjn jbjk kmb fvlk jg">
++      <created>1668753198778</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1668753198778</updated>
++    </task>
++    <task id="LOCAL-00002" summary="hi 9i n na 6pi da kak tyt pichatati">
++      <created>1668753385271</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1668753385271</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
++    <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Tiuohgyntohbngojthbn ongi bfrngvjkfbujhfrvgjn jbjk kmb fvlk jg" />
++    <MESSAGE value="hi 9i n na 6pi da kak tyt pichatati" />
++    <MESSAGE value="hi 9i n na 6pi da kak tyt pichatatid" />
++    <MESSAGE value="hi 9i n na 6pi da kak tyt pichatatidd" />
++    <option name="LAST_COMMIT_MESSAGE" value="hi 9i n na 6pi da kak tyt pichatatidd" />
++  </component>
++</project>
+\ No newline at end of file
