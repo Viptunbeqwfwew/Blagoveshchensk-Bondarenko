@@ -20,9 +20,22 @@ def DBsec():
         print(*i)
 
 
+def DBcec():
+    connect = sqlite3.connect(f"badData/{input()}")
+    cursor = connect.cursor()
+    gg, g = input().split()
+    res = cursor.execute(f"""SELECT utQ.name, utV.name, utB.datetime, utB.vol FROM utB 
+                                INNER JOIN utQ ON utB.q_id = utQ.id 
+                                INNER JOIN utV ON utB.v_id = utV.id 
+                                WHERE utV.color == '{gg}' and utB.vol > {g}
+                                ORDER by utB.vol""").fetchall()
+    for i in res:
+        print(*i, sep=";")
+
+
 
 def main():
-    DBsec()
+    DBcec()
 
 
 if __name__ == '__main__':
