@@ -34,8 +34,27 @@ def DBcec():
 
 
 
+def DBpir():
+    connect = sqlite3.connect(f"ddd/{input()}")
+    cursor = connect.cursor()
+    gg = int(input())
+    res = cursor.execute(f"""SELECT Robbers.name, Robbers.age, Injuries.title, Wounded.severity,
+                                Injuries.level_of_severity * Wounded.severity * Wounded.amount_of_damage desc 
+                                FROM Wounded 
+                                INNER JOIN Robbers ON Wounded.name_id = Robbers.id 
+                                INNER JOIN Injuries ON Wounded.injury_id = Injuries.id
+                                ORDER by Injuries.level_of_severity * Wounded.severity * Wounded.amount_of_damage desc,
+                                Robbers.name
+                                """).fetchall()
+    with open("badData/traffic.csv", encoding="utf8", mode='w') as csvFile:
+        writer = csv.writer(csvFile, delimiter=",")
+        for i in res[:gg]:
+            writer.writerow(i)
+            print(*i, sep=",")
+
+
 def main():
-    DBcec()
+    DBpir()
 
 
 if __name__ == '__main__':
