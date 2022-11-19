@@ -15,7 +15,7 @@ def Da():
 def DBsec():
     connect = sqlite3.connect(f"badData/{input()}")
     cursor = connect.cursor()
-    res = cursor.execute(f"SELECT model, type FROM Printer WHERE {input()} {input()} price > 280").fetchall()
+    res = cursor.execute(f"SELECT DISTINCT model, type FROM Printer WHERE {input()} {input()} price > 280 ORDER by type desc, model").fetchall()
     for i in res:
         print(*i)
 
