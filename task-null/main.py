@@ -4,7 +4,7 @@ import sqlite3
 
 def Da():
     fff, ffa = map(int, input().split())
-    with open("badData/traffic.csv", encoding="utf8", mode='r') as csvFile:
+    with open("../badData/traffic.csv", encoding="utf8", mode='r') as csvFile:
         reader = csv.DictReader(csvFile, delimiter=";")
         expensive = set(map(lambda x: x["name"], filter(lambda x: fff < int(x['volume']) < ffa and x['type'] == 'import', reader)))
     print(len(expensive))
@@ -46,7 +46,7 @@ def DBpir():
                                 ORDER by Injuries.level_of_severity * Wounded.severity * Wounded.amount_of_damage desc,
                                 Robbers.name
                                 """).fetchall()
-    with open("badData/traffic.csv", encoding="utf8", mode='w') as csvFile:
+    with open("../badData/traffic.csv", encoding="utf8", mode='w') as csvFile:
         writer = csv.writer(csvFile, delimiter=",")
         for i in res[:gg]:
             writer.writerow(i)
