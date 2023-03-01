@@ -3,20 +3,20 @@ from PyQt5.QtGui import QPainter
 from PyQt5.QtCore import Qt, QSize
 from PyQt5.QtGui import QPen
 from ui import Ui_MainWindow
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
-from random import randint
+from random import randint, choice
 import sys
 
 
-class Ui(QMainWindow):
+class Ui(QMainWindow, Ui_MainWindow):
     d: int = 0
     x: int = 0
     y: int = 0
+    pen: QPen
 
     def __init__(self):
         size: QSize
         super().__init__()
-        uic.loadUi("u2.ui", self)
+        self.setupUi(self)
         self.drawed.clicked.connect(self.run)
         self.do = False
         size = self.size()
@@ -25,6 +25,7 @@ class Ui(QMainWindow):
 
     def run(self):
         self.d = randint(1, 100)
+        self.pen = QPen(choice([Qt.yellow, Qt.black, Qt.blue, Qt.white, Qt.gray, Qt.green]), 8, Qt.SolidLine)
         self.do = True
 
     def paintEvent(self, event):
@@ -36,7 +37,7 @@ class Ui(QMainWindow):
             self.update()
 
     def draw(self):
-        self.paint.setPen(QPen(Qt.yellow, 8, Qt.SolidLine))
+        self.paint.setPen(self.pen)
         self.paint.drawEllipse(self.x // 2 - self.d // 2, self.y // 2 - 20 - self.d // 2, self.d, self.d)
 
 
