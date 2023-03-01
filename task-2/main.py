@@ -36,7 +36,7 @@ class Ui(QMainWindow, Ui_MainWindow):
             self.update()
 
     def draw(self):
-        self.paint.setPen(QPen(Qt.black, 8, Qt.SolidLine))
+        self.paint.setPen(QPen(Qt.yellow, 8, Qt.SolidLine))
         self.paint.drawEllipse(self.x // 2 - self.d // 2, self.y // 2 - 20 - self.d // 2, self.d, self.d)
 
 
