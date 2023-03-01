@@ -8,7 +8,7 @@ from random import randint
 import sys
 
 
-class Ui(QMainWindow, Ui_MainWindow):
+class Ui(QMainWindow):
     d: int = 0
     x: int = 0
     y: int = 0
@@ -16,7 +16,7 @@ class Ui(QMainWindow, Ui_MainWindow):
     def __init__(self):
         size: QSize
         super().__init__()
-        self.setupUi(self)
+        uic.loadUi("u2.ui", self)
         self.drawed.clicked.connect(self.run)
         self.do = False
         size = self.size()
